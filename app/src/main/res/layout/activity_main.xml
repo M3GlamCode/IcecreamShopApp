@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ice_two"
+    android:id="@+id/overall"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/title"
+        android:textSize="65sp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/playball"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="10dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/faintbrown">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="serif"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/request"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                app:fontFamily="serif"
+                android:layout_marginBottom="8dp"/>
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:ms_hint="@string/hint"
+                app:ms_background_color="@color/white_2"/>
+
+            <LinearLayout
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:background="@color/faintwhite_2">
+
+                <!--RadioButton 1-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="4dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:fontFamily="serif"
+                            android:text="@string/small"
+                            android:textSize="17sp" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/decreaseS"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/button_onoff_indicator_off"
+                            app:fabSize="mini"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/textS"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/count"
+                            android:gravity="center"
+                            android:textSize="18sp"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/increaseS"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_input_add"
+                            android:layout_marginTop="2dp"
+                            android:tint="@color/white"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!--end of RadioButton 1-->
+
+                <!--RadioButton 2-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medium"
+                            android:textSize="17sp"
+                            android:fontFamily="serif"
+                            android:layout_weight="5" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/decreaseM"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@android:drawable/button_onoff_indicator_off"
+                            app:fabSize="mini"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/textM"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/count"
+                            android:gravity="center"
+                            android:textSize="18sp"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/increaseM"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_input_add"
+                            android:layout_marginTop="2dp"
+                            android:tint="@color/white"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!--end of RadioButton 2-->
+
+                <!--RadioButton 3-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/large"
+                            android:textSize="18sp"
+                            android:fontFamily="serif"
+                            android:layout_weight="5"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/decreaseL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/button_onoff_indicator_off"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/textL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/count"
+                            android:gravity="center"
+                            android:textSize="18sp"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/increaseL"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:fabSize="mini"
+                            android:src="@android:drawable/ic_input_add"
+                            android:layout_marginTop="2dp"
+                            android:tint="@color/white"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!--end of RadioButton 3-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.8"
+                android:layout_marginTop="3dp">
+
+                <Button
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calculate"
+                    android:background="@drawable/button"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/price"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/order"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Just IceCream</string>
+
+    <string name="request">Place your order here</string>
+    <string name="title">Creamcy</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="order">Order</string>
+
+    <string name="count">1</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+
+    <string name="price">Total Price</string>
+    <string name="calculate">Calculate > </string>
+
+    <string name="price1">Small@ <b>$2</b></string>
+    <string name="price2">Medium@ <b>$5</b></string>
+    <string name="price3">Large@ <b>$10</b></string>
+
+    <string name="hint">Select flavor</string>
+
+</resources>
